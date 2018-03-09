@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: {
-    app: './src/index.js'
+    main: './src/index.js'
   },
   resolve: {
     extensions: ['.js', '.jsx', '.json']
@@ -20,7 +20,10 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: [
+          'style-loader',
+          { loader: 'css-loader', options: { minimize: true } }
+        ]
       },
       {
         test: /\.html$/,
@@ -43,7 +46,7 @@ module.exports = {
     ]
   },
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name].[hash].js',
     path: path.resolve(__dirname, 'dist')
   }
 }

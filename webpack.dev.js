@@ -1,9 +1,10 @@
 const webpack = require('webpack')
 const merge = require('webpack-merge')
+const DashboardPlugin = require('webpack-dashboard/plugin')
 const common = require('./webpack.common.js')
 
 module.exports = merge(common, {
-  devtool: 'inline-source-map',
+  devtool: 'eval-source-map',
   devServer: {
     contentBase: './dist',
     hot: true
@@ -13,6 +14,7 @@ module.exports = merge(common, {
       'process.env.NODE_ENV': JSON.stringify('development')
     }),
     new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new DashboardPlugin()
   ]
 })

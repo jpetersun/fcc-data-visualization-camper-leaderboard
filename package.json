@@ -24,11 +24,13 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open --mode development --config webpack.dev.js",
+    "start-db": "webpack-dashboard -- webpack-dev-server --open --mode development --config webpack.dev.js",
     "build": "webpack --mode production --config webpack.prod.js"
   },
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-hot-loader": "^4.0.0"
+    "react-hot-loader": "^4.0.0",
+    "webpack-dashboard": "^1.1.1"
   }
 }
