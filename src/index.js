@@ -1,10 +1,9 @@
-import _ from 'lodash'
+/* eslint-disable */
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
+import './styles.css'
 
-function component() {
-  var element = document.createElement('div')
+ReactDOM.render(<App />, document.getElementById('app'))
 
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ')
-
-  return element
-}
-document.body.appendChild(component())
+console.log('hi')
