@@ -1,3 +1,156 @@
-body {
-  background: #ccc;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+html {
+  font-family: sans-serif;
+
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  text-align: left;
+  /* sass variables */
+  /* font-size: ;*/
+  /*font-family: ;*/
+  /*font-weight: ;*/
+  /*line-height: ;*/
+  /*background-color: ;*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  /* sass variable */
+  margin-bottom: .5rem;
+}
+
+p {
+  margin-top 0;
+  /* sass variable */
+  margin-bottom: 1rem;
+}
+
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+ul,
+ol,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin-bottom: 0;
+}
+
+dt {
+  /* sass variable */
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: .5rem;
+  margin-left: 0;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+dfn {
+  font-style: italic;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+a {
+  /* sass variables */
+  /*color: ;*/
+  /*text-decoration: ;*/
+  background-color: transparent;
+}
+
+a:hover {
+  /* sass variables */
+  /*color: ;*/
+  /*text-decoration: ;*/
+}
+
+a:focus {
+  outline: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  text-align: inherit;
+}
+
+figure {
+  margin: 0 0 1rem;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+button {
+  border-radius: 0;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Responsive typography */
+/*
+@media (min-width: 600px) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 900px) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 1.6rem;
+  }
+}*/
