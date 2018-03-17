@@ -1,10 +1,11 @@
 import React from 'react'
 import { hot } from 'react-hot-loader'
+import Table from './Table'
 
 const App = () => {
   return (
     <div>
-      <h1>React in the House!!!</h1>
+      <Table />
     </div>
   )
 }
