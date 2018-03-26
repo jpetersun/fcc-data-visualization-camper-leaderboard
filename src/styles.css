@@ -162,4 +162,28 @@ textarea {
 .camper__img {
   width: 50px;
   height: 50px;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.camper-leaderboard__th {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.camper-leaderboard__th:first-of-type {
+  padding-left: 1rem;
+}
+
+.camper__th {
+  padding-left: 1rem;
+}
+
+.camper-leaderboard {
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }

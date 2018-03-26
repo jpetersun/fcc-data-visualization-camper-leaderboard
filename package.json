@@ -28,6 +28,7 @@
     "build": "webpack --mode production --config webpack.prod.js"
   },
   "dependencies": {
+    "parcel-bundler": "^1.6.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-hot-loader": "^4.0.0",

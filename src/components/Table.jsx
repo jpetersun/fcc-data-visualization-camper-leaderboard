@@ -23,13 +23,13 @@ class Table extends React.Component {
 
   render () {
     return (
-      <table className='dark'>
-        <thead>
+      <table className='camper-leaderboard dark'>
+        <thead className='camper-leaderboard__thead'>
           <tr>
-            <th>#</th>
-            <th>Camper Name</th>
-            <th>Points in past 30 days</th>
-            <th>All time points</th>
+            <th className='camper-leaderboard__th'>#</th>
+            <th className='camper-leaderboard__th'>Camper Name</th>
+            <th className='camper-leaderboard__th'>Points in past 30 days</th>
+            <th className='camper-leaderboard__th'>All time points</th>
           </tr>
         </thead>
         <tbody>
