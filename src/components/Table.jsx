@@ -2,6 +2,7 @@ import React from 'react'
 import { hot } from 'react-hot-loader'
 import Row from './Row'
 
+// Data is already sorted, but event handlers can sort data otherwise
 import campersAllTime from '../data/alltime.json'
 import campersRecent from '../data/recent.json'
 
@@ -26,7 +27,6 @@ class Table extends React.Component {
     const campers = Object.assign({}, this.state.campersAllTime)
 
     // Most to least
-    // Data is already sorted, but can sort data otherwise
     const sorted = campers.alltime.sort((a, b) => {
       return b.alltime - a.alltime
     })
@@ -40,7 +40,6 @@ class Table extends React.Component {
     const campers = Object.assign({}, this.state.campersRecent)
 
     // Most to least
-    // Data is already sorted, but can sort data otherwise
     const sorted = campers.recent.sort((a, b) => {
       return b.recent - a.recent
     })
