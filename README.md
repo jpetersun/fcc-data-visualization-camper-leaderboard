@@ -1,3 +1,3 @@
 # fcc-data-visualization-camper-leaderboard
 
-http://succinct-fog.surge.sh/
+http://physical-bean.surge.sh/
